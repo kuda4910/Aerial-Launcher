@@ -19,6 +19,7 @@
   "account-management": {
     "title": "Account Management",
     "options": {
+      "stats": "Stats",
       "vbucks-information": "V-Bucks Information",
       "redeem-codes": "Redeem Codes",
       "devices-auth": "Devices Auth",

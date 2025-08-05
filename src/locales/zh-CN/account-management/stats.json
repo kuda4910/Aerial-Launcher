@@ -1,0 +1,12 @@
+{
+  "description": "显示任务进度、等级和已领取奖励。",
+  "form": {
+    "submit-button": "显示统计"
+  },
+  "results": {
+    "title": "{{total}} 个账户的统计"
+  },
+  "level": "等级",
+  "missions": "任务",
+  "rewards": "奖励"
+}

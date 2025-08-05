@@ -1,0 +1,12 @@
+{
+  "description": "Muestra progreso de misiones, nivel y recompensas reclamadas.",
+  "form": {
+    "submit-button": "Mostrar estadísticas"
+  },
+  "results": {
+    "title": "Estadísticas en {{total}} cuenta/s"
+  },
+  "level": "Nivel",
+  "missions": "Misiones",
+  "rewards": "Recompensas"
+}

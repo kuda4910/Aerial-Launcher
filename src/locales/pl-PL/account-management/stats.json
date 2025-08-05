@@ -1,0 +1,12 @@
+{
+  "description": "Pokazuje postęp misji, poziom i odebrane nagrody.",
+  "form": {
+    "submit-button": "Pokaż statystyki"
+  },
+  "results": {
+    "title": "Statystyki dla {{total}} konta/kont"
+  },
+  "level": "Poziom",
+  "missions": "Misje",
+  "rewards": "Nagrody"
+}

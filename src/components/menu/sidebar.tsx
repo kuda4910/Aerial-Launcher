@@ -253,6 +253,21 @@ export function SidebarMenu({
                 )}
               >
                 <ul className="list-disc ml-5">
+                  {getMenuOptionVisibility('accountStats') && (
+                    <li className="item">
+                      <Link
+                        to="/account-management/stats"
+                        className={currentClassNameHover}
+                        activeProps={{
+                          className: cn(activeClassName),
+                        }}
+                        onClick={goToPage}
+                        onAuxClick={whatIsThis()}
+                      >
+                        {t('account-management.options.stats')}
+                      </Link>
+                    </li>
+                  )}
                   {getMenuOptionVisibility('vbucksInformation') && (
                     <li className="item">
                       <Link

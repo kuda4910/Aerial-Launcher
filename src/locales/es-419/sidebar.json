@@ -19,6 +19,7 @@
   "account-management": {
     "title": "Administrar Cuenta",
     "options": {
+      "stats": "Estadísticas",
       "vbucks-information": "Información de V-Bucks",
       "redeem-codes": "Reclamar Códigos",
       "devices-auth": "Autenticación de Dispositivos",

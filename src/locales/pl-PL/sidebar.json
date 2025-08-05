@@ -19,6 +19,7 @@
   "account-management": {
     "title": "Zarządzanie kontem",
     "options": {
+      "stats": "Statystyki",
       "vbucks-information": "Informacje o V-Dolcach",
       "redeem-codes": "Zrealizuj kody",
       "devices-auth": "Urządzenia autoryzowane",
