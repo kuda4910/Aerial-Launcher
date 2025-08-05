@@ -1,0 +1,12 @@
+{
+  "description": "Shows Save the World mission progress, account level and claimed rewards.",
+  "form": {
+    "submit-button": "Show Stats"
+  },
+  "results": {
+    "title": "Stats on {{total}} Account/s"
+  },
+  "level": "Level",
+  "missions": "Missions",
+  "rewards": "Rewards"
+}

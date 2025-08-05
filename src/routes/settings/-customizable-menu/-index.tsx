@@ -196,12 +196,25 @@ function AccountManagementSection() {
           onCheckedChange={updateMenuOption('accountManagement')}
         />
       </div>
-      <div className="list">
-        <div className="item">
-          <Label
-            className="title"
-            htmlFor="vbucks-information"
-          >
+        <div className="list">
+          <div className="item">
+            <Label
+              className="title"
+              htmlFor="stats"
+            >
+              {t('account-management.options.stats')}
+            </Label>
+            <Switch
+              id="stats"
+              checked={getMenuOptionVisibility('accountStats')}
+              onCheckedChange={updateMenuOption('accountStats')}
+            />
+          </div>
+          <div className="item">
+            <Label
+              className="title"
+              htmlFor="vbucks-information"
+            >
             {t('account-management.options.vbucks-information')}
           </Label>
           <Switch

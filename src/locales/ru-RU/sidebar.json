@@ -19,6 +19,7 @@
   "account-management": {
     "title": "Управление Аккаунтом",
     "options": {
+      "stats": "Статистика",
       "vbucks-information": "Информацию о В-баксах",
       "redeem-codes": "Активация Кодов",
       "devices-auth": "Аутентификация Устройств",

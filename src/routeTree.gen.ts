@@ -25,6 +25,7 @@ import { Route as InformationCreditsRouteImport } from './routes/information/cre
 import { Route as AdvancedModeWorldInfoRouteImport } from './routes/advanced-mode/world-info/route'
 import { Route as AdvancedModeMatchmakingTrackRouteImport } from './routes/advanced-mode/matchmaking-track/route'
 import { Route as AccountsRemoveRouteImport } from './routes/accounts/remove/route'
+import { Route as AccountManagementStatsRouteImport } from './routes/account-management/stats/route'
 import { Route as AccountManagementVbucksInformationRouteImport } from './routes/account-management/vbucks-information/route'
 import { Route as AccountManagementRedeemCodesRouteImport } from './routes/account-management/redeem-codes/route'
 import { Route as AccountManagementEulaRouteImport } from './routes/account-management/eula/route'
@@ -113,6 +114,11 @@ const AccountsRemoveRouteRoute = AccountsRemoveRouteImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const AccountManagementStatsRouteRoute = AccountManagementStatsRouteImport.update({
+  path: '/account-management/stats',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const AccountManagementVbucksInformationRouteRoute =
   AccountManagementVbucksInformationRouteImport.update({
     path: '/account-management/vbucks-information',
@@ -175,6 +181,10 @@ declare module '@tanstack/react-router' {
     }
     '/account-management/redeem-codes': {
       preLoaderRoute: typeof AccountManagementRedeemCodesRouteImport
+      parentRoute: typeof rootRoute
+    }
+    '/account-management/stats': {
+      preLoaderRoute: typeof AccountManagementStatsRouteImport
       parentRoute: typeof rootRoute
     }
     '/account-management/vbucks-information': {
@@ -245,6 +255,7 @@ export const routeTree = rootRoute.addChildren([
   AccountManagementEpicGamesSettingsRouteRoute,
   AccountManagementEulaRouteRoute,
   AccountManagementRedeemCodesRouteRoute,
+  AccountManagementStatsRouteRoute,
   AccountManagementVbucksInformationRouteRoute,
   AccountsRemoveRouteRoute,
   AdvancedModeMatchmakingTrackRouteRoute,

@@ -17,6 +17,7 @@ import enUS_stwOperations_Urns from './en-US/stw-operations/urns.json'
 import enUS_stwOperations_XPBoosts from './en-US/stw-operations/xpboosts.json'
 import enUS_stwOperations_Llamas from './en-US/stw-operations/llamas.json'
 import enUS_stwOperations_Unlock from './en-US/stw-operations/unlock.json'
+import enUS_accountManagement_Stats from './en-US/account-management/stats.json'
 import enUS_accountManagement_VBucksInformation from './en-US/account-management/vbucks-information.json'
 import enUS_accountManagement_EULA from './en-US/account-management/eula.json'
 import enUS_accountManagement_RedeemCodes from './en-US/account-management/redeem-codes.json'
@@ -37,23 +38,24 @@ const enUS = {
   settings: enUS_settings,
   alerts: enUS_alerts,
   zones: enUS_zones,
-  'stw-operations': {
-    'auto-kick': enUS_stwOperations_AutoKick,
-    'homebase-name': enUS_stwOperations_HomebaseName,
-    'save-quests': enUS_stwOperations_SaveQuests,
-    party: enUS_stwOperations_Party,
-    urns: enUS_stwOperations_Urns,
-    xpboosts: enUS_stwOperations_XPBoosts,
-    llamas: enUS_stwOperations_Llamas,
-    unlock: enUS_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': enUS_accountManagement_VBucksInformation,
-    'redeem-codes': enUS_accountManagement_RedeemCodes,
-    'devices-auth': enUS_accountManagement_DevicesAuth,
-    'epic-settings': enUS_accountManagement_EpicSettings,
-    eula: enUS_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': enUS_stwOperations_AutoKick,
+      'homebase-name': enUS_stwOperations_HomebaseName,
+      'save-quests': enUS_stwOperations_SaveQuests,
+      party: enUS_stwOperations_Party,
+      urns: enUS_stwOperations_Urns,
+      xpboosts: enUS_stwOperations_XPBoosts,
+      llamas: enUS_stwOperations_Llamas,
+      unlock: enUS_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: enUS_accountManagement_Stats,
+      'vbucks-information': enUS_accountManagement_VBucksInformation,
+      'redeem-codes': enUS_accountManagement_RedeemCodes,
+      'devices-auth': enUS_accountManagement_DevicesAuth,
+      'epic-settings': enUS_accountManagement_EpicSettings,
+      eula: enUS_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': enUS_advancedMode_MatchmakingTrack,
     'world-info': enUS_advancedMode_WorldInfo,
@@ -84,6 +86,7 @@ import es419_stwOperations_Urns from './es-419/stw-operations/urns.json'
 import es419_stwOperations_XPBoosts from './es-419/stw-operations/xpboosts.json'
 import es419_stwOperations_Llamas from './es-419/stw-operations/llamas.json'
 import es419_stwOperations_Unlock from './es-419/stw-operations/unlock.json'
+import es419_accountManagement_Stats from './es-419/account-management/stats.json'
 import es419_accountManagement_VBucksInformation from './es-419/account-management/vbucks-information.json'
 import es419_accountManagement_EULA from './es-419/account-management/eula.json'
 import es419_accountManagement_RedeemCodes from './es-419/account-management/redeem-codes.json'
@@ -104,23 +107,24 @@ const es419 = {
   settings: es419_settings,
   alerts: es419_alerts,
   zones: es419_zones,
-  'stw-operations': {
-    'auto-kick': es419_stwOperations_AutoKick,
-    'homebase-name': es419_stwOperations_HomebaseName,
-    'save-quests': es419_stwOperations_SaveQuests,
-    party: es419_stwOperations_Party,
-    urns: es419_stwOperations_Urns,
-    xpboosts: es419_stwOperations_XPBoosts,
-    llamas: es419_stwOperations_Llamas,
-    unlock: es419_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': es419_accountManagement_VBucksInformation,
-    'redeem-codes': es419_accountManagement_RedeemCodes,
-    'devices-auth': es419_accountManagement_DevicesAuth,
-    'epic-settings': es419_accountManagement_EpicSettings,
-    eula: es419_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': es419_stwOperations_AutoKick,
+      'homebase-name': es419_stwOperations_HomebaseName,
+      'save-quests': es419_stwOperations_SaveQuests,
+      party: es419_stwOperations_Party,
+      urns: es419_stwOperations_Urns,
+      xpboosts: es419_stwOperations_XPBoosts,
+      llamas: es419_stwOperations_Llamas,
+      unlock: es419_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: es419_accountManagement_Stats,
+      'vbucks-information': es419_accountManagement_VBucksInformation,
+      'redeem-codes': es419_accountManagement_RedeemCodes,
+      'devices-auth': es419_accountManagement_DevicesAuth,
+      'epic-settings': es419_accountManagement_EpicSettings,
+      eula: es419_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': es419_advancedMode_MatchmakingTrack,
     'world-info': es419_advancedMode_WorldInfo,
@@ -151,6 +155,7 @@ import zhCN_stwOperations_Urns from './zh-CN/stw-operations/urns.json'
 import zhCN_stwOperations_XPBoosts from './zh-CN/stw-operations/xpboosts.json'
 import zhCN_stwOperations_Llamas from './zh-CN/stw-operations/llamas.json'
 import zhCN_stwOperations_Unlock from './zh-CN/stw-operations/unlock.json'
+import zhCN_accountManagement_Stats from './zh-CN/account-management/stats.json'
 import zhCN_accountManagement_VBucksInformation from './zh-CN/account-management/vbucks-information.json'
 import zhCN_accountManagement_EULA from './zh-CN/account-management/eula.json'
 import zhCN_accountManagement_RedeemCodes from './zh-CN/account-management/redeem-codes.json'
@@ -171,23 +176,24 @@ const zhCN = {
   settings: zhCN_settings,
   alerts: zhCN_alerts,
   zones: zhCN_zones,
-  'stw-operations': {
-    'auto-kick': zhCN_stwOperations_AutoKick,
-    'homebase-name': zhCN_stwOperations_HomebaseName,
-    'save-quests': zhCN_stwOperations_SaveQuests,
-    party: zhCN_stwOperations_Party,
-    urns: zhCN_stwOperations_Urns,
-    xpboosts: zhCN_stwOperations_XPBoosts,
-    llamas: zhCN_stwOperations_Llamas,
-    unlock: zhCN_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': zhCN_accountManagement_VBucksInformation,
-    'redeem-codes': zhCN_accountManagement_RedeemCodes,
-    'devices-auth': zhCN_accountManagement_DevicesAuth,
-    'epic-settings': zhCN_accountManagement_EpicSettings,
-    eula: zhCN_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': zhCN_stwOperations_AutoKick,
+      'homebase-name': zhCN_stwOperations_HomebaseName,
+      'save-quests': zhCN_stwOperations_SaveQuests,
+      party: zhCN_stwOperations_Party,
+      urns: zhCN_stwOperations_Urns,
+      xpboosts: zhCN_stwOperations_XPBoosts,
+      llamas: zhCN_stwOperations_Llamas,
+      unlock: zhCN_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: zhCN_accountManagement_Stats,
+      'vbucks-information': zhCN_accountManagement_VBucksInformation,
+      'redeem-codes': zhCN_accountManagement_RedeemCodes,
+      'devices-auth': zhCN_accountManagement_DevicesAuth,
+      'epic-settings': zhCN_accountManagement_EpicSettings,
+      eula: zhCN_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': zhCN_advancedMode_MatchmakingTrack,
     'world-info': zhCN_advancedMode_WorldInfo,
@@ -218,6 +224,7 @@ import ruRU_stwOperations_Urns from './ru-RU/stw-operations/urns.json'
 import ruRU_stwOperations_XPBoosts from './ru-RU/stw-operations/xpboosts.json'
 import ruRU_stwOperations_Llamas from './ru-RU/stw-operations/llamas.json'
 import ruRU_stwOperations_Unlock from './ru-RU/stw-operations/unlock.json'
+import ruRU_accountManagement_Stats from './ru-RU/account-management/stats.json'
 import ruRU_accountManagement_VBucksInformation from './ru-RU/account-management/vbucks-information.json'
 import ruRU_accountManagement_EULA from './ru-RU/account-management/eula.json'
 import ruRU_accountManagement_RedeemCodes from './ru-RU/account-management/redeem-codes.json'
@@ -238,23 +245,24 @@ const ruRU = {
   settings: ruRU_settings,
   alerts: ruRU_alerts,
   zones: ruRU_zones,
-  'stw-operations': {
-    'auto-kick': ruRU_stwOperations_AutoKick,
-    'homebase-name': ruRU_stwOperations_HomebaseName,
-    'save-quests': ruRU_stwOperations_SaveQuests,
-    party: ruRU_stwOperations_Party,
-    urns: ruRU_stwOperations_Urns,
-    xpboosts: ruRU_stwOperations_XPBoosts,
-    llamas: ruRU_stwOperations_Llamas,
-    unlock: ruRU_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': ruRU_accountManagement_VBucksInformation,
-    'redeem-codes': ruRU_accountManagement_RedeemCodes,
-    'devices-auth': ruRU_accountManagement_DevicesAuth,
-    'epic-settings': ruRU_accountManagement_EpicSettings,
-    eula: ruRU_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': ruRU_stwOperations_AutoKick,
+      'homebase-name': ruRU_stwOperations_HomebaseName,
+      'save-quests': ruRU_stwOperations_SaveQuests,
+      party: ruRU_stwOperations_Party,
+      urns: ruRU_stwOperations_Urns,
+      xpboosts: ruRU_stwOperations_XPBoosts,
+      llamas: ruRU_stwOperations_Llamas,
+      unlock: ruRU_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: ruRU_accountManagement_Stats,
+      'vbucks-information': ruRU_accountManagement_VBucksInformation,
+      'redeem-codes': ruRU_accountManagement_RedeemCodes,
+      'devices-auth': ruRU_accountManagement_DevicesAuth,
+      'epic-settings': ruRU_accountManagement_EpicSettings,
+      eula: ruRU_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': ruRU_advancedMode_MatchmakingTrack,
     'world-info': ruRU_advancedMode_WorldInfo,
@@ -285,6 +293,7 @@ import ptBR_stwOperations_Urns from './pt-BR/stw-operations/urns.json'
 import ptBR_stwOperations_XPBoosts from './pt-BR/stw-operations/xpboosts.json'
 import ptBR_stwOperations_Llamas from './pt-BR/stw-operations/llamas.json'
 import ptBR_stwOperations_Unlock from './pt-BR/stw-operations/unlock.json'
+import ptBR_accountManagement_Stats from './pt-BR/account-management/stats.json'
 import ptBR_accountManagement_VBucksInformation from './pt-BR/account-management/vbucks-information.json'
 import ptBR_accountManagement_EULA from './pt-BR/account-management/eula.json'
 import ptBR_accountManagement_RedeemCodes from './pt-BR/account-management/redeem-codes.json'
@@ -305,23 +314,24 @@ const ptBR = {
   settings: ptBR_settings,
   alerts: ptBR_alerts,
   zones: ptBR_zones,
-  'stw-operations': {
-    'auto-kick': ptBR_stwOperations_AutoKick,
-    'homebase-name': ptBR_stwOperations_HomebaseName,
-    'save-quests': ptBR_stwOperations_SaveQuests,
-    party: ptBR_stwOperations_Party,
-    urns: ptBR_stwOperations_Urns,
-    xpboosts: ptBR_stwOperations_XPBoosts,
-    llamas: ptBR_stwOperations_Llamas,
-    unlock: ptBR_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': ptBR_accountManagement_VBucksInformation,
-    'redeem-codes': ptBR_accountManagement_RedeemCodes,
-    'devices-auth': ptBR_accountManagement_DevicesAuth,
-    'epic-settings': ptBR_accountManagement_EpicSettings,
-    eula: ptBR_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': ptBR_stwOperations_AutoKick,
+      'homebase-name': ptBR_stwOperations_HomebaseName,
+      'save-quests': ptBR_stwOperations_SaveQuests,
+      party: ptBR_stwOperations_Party,
+      urns: ptBR_stwOperations_Urns,
+      xpboosts: ptBR_stwOperations_XPBoosts,
+      llamas: ptBR_stwOperations_Llamas,
+      unlock: ptBR_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: ptBR_accountManagement_Stats,
+      'vbucks-information': ptBR_accountManagement_VBucksInformation,
+      'redeem-codes': ptBR_accountManagement_RedeemCodes,
+      'devices-auth': ptBR_accountManagement_DevicesAuth,
+      'epic-settings': ptBR_accountManagement_EpicSettings,
+      eula: ptBR_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': ptBR_advancedMode_MatchmakingTrack,
     'world-info': ptBR_advancedMode_WorldInfo,
@@ -352,6 +362,7 @@ import plPL_stwOperations_Urns from './pl-PL/stw-operations/urns.json'
 import plPL_stwOperations_XPBoosts from './pl-PL/stw-operations/xpboosts.json'
 import plPL_stwOperations_Llamas from './pl-PL/stw-operations/llamas.json'
 import plPL_stwOperations_Unlock from './pl-PL/stw-operations/unlock.json'
+import plPL_accountManagement_Stats from './pl-PL/account-management/stats.json'
 import plPL_accountManagement_VBucksInformation from './pl-PL/account-management/vbucks-information.json'
 import plPL_accountManagement_EULA from './pl-PL/account-management/eula.json'
 import plPL_accountManagement_RedeemCodes from './pl-PL/account-management/redeem-codes.json'
@@ -372,23 +383,24 @@ const plPL = {
   settings: plPL_settings,
   alerts: plPL_alerts,
   zones: plPL_zones,
-  'stw-operations': {
-    'auto-kick': plPL_stwOperations_AutoKick,
-    'homebase-name': plPL_stwOperations_HomebaseName,
-    'save-quests': plPL_stwOperations_SaveQuests,
-    party: plPL_stwOperations_Party,
-    urns: plPL_stwOperations_Urns,
-    xpboosts: plPL_stwOperations_XPBoosts,
-    llamas: plPL_stwOperations_Llamas,
-    unlock: plPL_stwOperations_Unlock,
-  },
-  'account-management': {
-    'vbucks-information': plPL_accountManagement_VBucksInformation,
-    'redeem-codes': plPL_accountManagement_RedeemCodes,
-    'devices-auth': plPL_accountManagement_DevicesAuth,
-    'epic-settings': plPL_accountManagement_EpicSettings,
-    eula: plPL_accountManagement_EULA,
-  },
+    'stw-operations': {
+      'auto-kick': plPL_stwOperations_AutoKick,
+      'homebase-name': plPL_stwOperations_HomebaseName,
+      'save-quests': plPL_stwOperations_SaveQuests,
+      party: plPL_stwOperations_Party,
+      urns: plPL_stwOperations_Urns,
+      xpboosts: plPL_stwOperations_XPBoosts,
+      llamas: plPL_stwOperations_Llamas,
+      unlock: plPL_stwOperations_Unlock,
+    },
+    'account-management': {
+      stats: plPL_accountManagement_Stats,
+      'vbucks-information': plPL_accountManagement_VBucksInformation,
+      'redeem-codes': plPL_accountManagement_RedeemCodes,
+      'devices-auth': plPL_accountManagement_DevicesAuth,
+      'epic-settings': plPL_accountManagement_EpicSettings,
+      eula: plPL_accountManagement_EULA,
+    },
   'advanced-mode': {
     'matchmaking-track': plPL_advancedMode_MatchmakingTrack,
     'world-info': plPL_advancedMode_WorldInfo,

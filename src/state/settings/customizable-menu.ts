@@ -34,13 +34,14 @@ export const customizableMenuSettingsRelations: Record<
     'autoLlamas',
     'unlock',
   ],
-  accountManagement: [
-    'vbucksInformation',
-    'redeemCodes',
-    'devicesAuth',
-    'epicGamesSettings',
-    'eula',
-  ],
+    accountManagement: [
+      'accountStats',
+      'vbucksInformation',
+      'redeemCodes',
+      'devicesAuth',
+      'epicGamesSettings',
+      'eula',
+    ],
   advancedMode: ['matchmakingTrack', 'worldInfo'],
   myAccounts: [
     'authorizationCode',
