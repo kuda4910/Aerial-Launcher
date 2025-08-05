@@ -1,6 +1,7 @@
 import type { ConfigEnv, UserConfig } from 'vite'
 
 import { defineConfig, mergeConfig } from 'vite'
+import fs from 'node:fs'
 
 import {
   getBuildConfig,
@@ -16,7 +17,7 @@ export default defineConfig((env) => {
     build: {
       chunkSizeWarningLimit: 2000,
       rollupOptions: {
-        external,
+        external: [...external, 'node-process-watcher'],
         // Preload scripts may contain Web assets, so use the `build.rollupOptions.input` instead `build.lib.entry`.
         input: forgeConfigSelf.entry,
         output: {
@@ -36,6 +37,19 @@ export default defineConfig((env) => {
           warn(warning)
         },
       },
+    },
+    esbuild: {
+      plugins: [
+        {
+          name: 'node-loader',
+          setup(build) {
+            build.onLoad({ filter: /\.node$/ }, async (args) => ({
+              contents: await fs.promises.readFile(args.path),
+              loader: 'file',
+            }))
+          },
+        },
+      ],
     },
     plugins: [pluginHotRestart('reload')],
   }
