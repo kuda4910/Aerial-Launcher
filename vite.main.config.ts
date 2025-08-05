@@ -1,5 +1,6 @@
 import type { ConfigEnv, UserConfig } from 'vite'
 import { defineConfig, mergeConfig } from 'vite'
+import fs from 'node:fs'
 
 import {
   getBuildConfig,
@@ -22,7 +23,7 @@ export default defineConfig((env) => {
         formats: ['cjs'],
       },
       rollupOptions: {
-        external,
+        external: [...external, 'node-process-watcher'],
         onwarn(warning, warn) {
           // Suppress "Module level directives cause errors when bundled" warnings
           if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
@@ -32,6 +33,19 @@ export default defineConfig((env) => {
           warn(warning)
         },
       },
+    },
+    esbuild: {
+      plugins: [
+        {
+          name: 'node-loader',
+          setup(build) {
+            build.onLoad({ filter: /\.node$/ }, async (args) => ({
+              contents: await fs.promises.readFile(args.path),
+              loader: 'file',
+            }))
+          },
+        },
+      ],
     },
     plugins: [pluginHotRestart('restart')],
     define,
