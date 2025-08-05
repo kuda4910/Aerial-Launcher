@@ -1,6 +1,5 @@
-import type { ConfigEnv, UserConfig } from 'vite'
+import type { ConfigEnv, UserConfig, Plugin } from 'vite'
 import { defineConfig, mergeConfig } from 'vite'
-import fs from 'node:fs'
 
 import {
   getBuildConfig,
@@ -8,6 +7,15 @@ import {
   external,
   pluginHotRestart,
 } from './vite.base.config'
+
+const externalizeNode: Plugin = {
+  name: 'externalize-node',
+  resolveId(source) {
+    if (source.endsWith('.node')) {
+      return { id: source, external: true }
+    }
+  },
+}
 
 // https://vitejs.dev/config
 export default defineConfig((env) => {
@@ -34,20 +42,7 @@ export default defineConfig((env) => {
         },
       },
     },
-    esbuild: {
-      plugins: [
-        {
-          name: 'node-loader',
-          setup(build) {
-            build.onLoad({ filter: /\.node$/ }, async (args) => ({
-              contents: await fs.promises.readFile(args.path),
-              loader: 'file',
-            }))
-          },
-        },
-      ],
-    },
-    plugins: [pluginHotRestart('restart')],
+    plugins: [externalizeNode, pluginHotRestart('restart')],
     define,
     resolve: {
       // Load the Node.js entry.
