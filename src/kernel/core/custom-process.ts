@@ -4,6 +4,13 @@
 // development build to fail with a "No loader is configured for '.node' files"
 // error.
 import { createRequire } from 'node:module'
+// Using `eval('require')` prevents Vite's build step from attempting to
+// process the `.node` binary inside `node-process-watcher`, which previously
+// caused the development build to fail with a "No loader is configured for
+// '.node' files" error.
+const { node_process_watcher } = (eval('require') as typeof require)(
+  'node-process-watcher'
+) as typeof import('node-process-watcher')
 import { ElectronAPIEventKeys } from '../../config/constants/main-process'
 import { MainWindow } from '../startup/windows/main'
 
