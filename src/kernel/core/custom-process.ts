@@ -4,19 +4,23 @@
 // development build to fail with a "No loader is configured for '.node' files"
 // error.
 import { createRequire } from 'node:module'
-// Using `eval('require')` prevents Vite's build step from attempting to
-// process the `.node` binary inside `node-process-watcher`, which previously
-// caused the development build to fail with a "No loader is configured for
-// '.node' files" error.
-const { node_process_watcher } = (eval('require') as typeof require)(
-  'node-process-watcher'
-) as typeof import('node-process-watcher')
 import { ElectronAPIEventKeys } from '../../config/constants/main-process'
 import { MainWindow } from '../startup/windows/main'
 
-const { node_process_watcher } = createRequire(import.meta.url)(
-  'node-process-watcher'
-) as typeof import('node-process-watcher')
+let node_process_watcher:
+  | (typeof import('node-process-watcher'))['node_process_watcher']
+  | null = null
+
+try {
+  node_process_watcher = createRequire(import.meta.url)(
+    'node-process-watcher'
+  ).node_process_watcher
+} catch (error) {
+  console.warn(
+    'Failed to load node-process-watcher. Native dependency might be missing.',
+    error
+  )
+}
 
 export class CustomProcess {
   private static id: number | null = null
@@ -28,7 +32,7 @@ export class CustomProcess {
       return
     }
 
-    node_process_watcher.on('custom-process', (list) => {
+    node_process_watcher?.on('custom-process', (list) => {
       const filtered = list.find(
         (item) => item.name === CustomProcess.name
       )
@@ -52,7 +56,7 @@ export class CustomProcess {
       return
     }
 
-    node_process_watcher.kill_process(CustomProcess.id, true)
+    node_process_watcher?.kill_process(CustomProcess.id, true)
   }
 
   static setName(value: string, restart?: boolean) {
@@ -72,6 +76,6 @@ export class CustomProcess {
     CustomProcess.id = null
     CustomProcess.name = null
     CustomProcess.isRunning = false
-    node_process_watcher.close('custom-process')
+    node_process_watcher?.close('custom-process')
   }
 }
