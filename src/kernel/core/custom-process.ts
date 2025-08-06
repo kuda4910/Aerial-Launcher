@@ -1,8 +1,15 @@
-import { node_process_watcher } from 'node-process-watcher'
-
+// Dynamically require the native module at runtime to avoid bundler issues.
+// Using `createRequire` prevents Vite's build step from attempting to process
+// the `.node` binary inside `node-process-watcher`, which previously caused the
+// development build to fail with a "No loader is configured for '.node' files"
+// error.
+import { createRequire } from 'node:module'
 import { ElectronAPIEventKeys } from '../../config/constants/main-process'
-
 import { MainWindow } from '../startup/windows/main'
+
+const { node_process_watcher } = createRequire(import.meta.url)(
+  'node-process-watcher'
+) as typeof import('node-process-watcher')
 
 export class CustomProcess {
   private static id: number | null = null
