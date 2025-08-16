@@ -8,5 +8,6 @@
   },
   "level": "Nível",
   "missions": "Missões",
-  "rewards": "Recompensas"
+  "rewards": "Recompensas",
+  "error": "Não foi possível obter as estatísticas"
 }

@@ -14,7 +14,8 @@ import { toast } from '../../../lib/notifications'
 import { getQueryProfile } from '../../../services/endpoints/mcp'
 
 export function useAccountStatsData() {
-  const { t } = useTranslation(['general'])
+  const { t: tGeneral } = useTranslation(['general'])
+  const { t } = useTranslation(['account-management'], { keyPrefix: 'stats' })
 
   const { accountsArray, accountList } = useGetAccounts()
   const { data, isLoading, selectedAccounts, selectedTags } =
@@ -53,7 +54,7 @@ export function useAccountStatsData() {
     const selected = getAccounts()
 
     if (selected.length <= 0) {
-      toast(t('form.accounts.no-linked'))
+      toast(tGeneral('form.accounts.no-linked'))
 
       return
     }
@@ -94,7 +95,7 @@ export function useAccountStatsData() {
             rewardsClaimed,
           }
         } catch (error) {
-          //
+          toast.error(t('error'))
         }
       })
     )

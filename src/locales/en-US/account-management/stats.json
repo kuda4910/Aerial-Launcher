@@ -8,5 +8,6 @@
   },
   "level": "Level",
   "missions": "Missions",
-  "rewards": "Rewards"
+  "rewards": "Rewards",
+  "error": "Failed to retrieve stats"
 }
