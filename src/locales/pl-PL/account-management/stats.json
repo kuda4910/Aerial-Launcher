@@ -8,5 +8,6 @@
   },
   "level": "Poziom",
   "missions": "Misje",
-  "rewards": "Nagrody"
+  "rewards": "Nagrody",
+  "error": "Nie udało się pobrać statystyk"
 }

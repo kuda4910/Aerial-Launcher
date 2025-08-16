@@ -8,5 +8,6 @@
   },
   "level": "等级",
   "missions": "任务",
-  "rewards": "奖励"
+  "rewards": "奖励",
+  "error": "无法获取统计信息"
 }
