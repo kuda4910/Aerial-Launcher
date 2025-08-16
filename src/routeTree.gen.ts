@@ -25,8 +25,8 @@ import { Route as InformationCreditsRouteImport } from './routes/information/cre
 import { Route as AdvancedModeWorldInfoRouteImport } from './routes/advanced-mode/world-info/route'
 import { Route as AdvancedModeMatchmakingTrackRouteImport } from './routes/advanced-mode/matchmaking-track/route'
 import { Route as AccountsRemoveRouteImport } from './routes/accounts/remove/route'
-import { Route as AccountManagementStatsRouteImport } from './routes/account-management/stats/route'
 import { Route as AccountManagementVbucksInformationRouteImport } from './routes/account-management/vbucks-information/route'
+import { Route as AccountManagementStatsRouteImport } from './routes/account-management/stats/route'
 import { Route as AccountManagementRedeemCodesRouteImport } from './routes/account-management/redeem-codes/route'
 import { Route as AccountManagementEulaRouteImport } from './routes/account-management/eula/route'
 import { Route as AccountManagementEpicGamesSettingsRouteImport } from './routes/account-management/epic-games-settings/route'
@@ -114,14 +114,15 @@ const AccountsRemoveRouteRoute = AccountsRemoveRouteImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const AccountManagementStatsRouteRoute = AccountManagementStatsRouteImport.update({
-  path: '/account-management/stats',
-  getParentRoute: () => rootRoute,
-} as any)
-
 const AccountManagementVbucksInformationRouteRoute =
   AccountManagementVbucksInformationRouteImport.update({
     path: '/account-management/vbucks-information',
+    getParentRoute: () => rootRoute,
+  } as any)
+
+const AccountManagementStatsRouteRoute =
+  AccountManagementStatsRouteImport.update({
+    path: '/account-management/stats',
     getParentRoute: () => rootRoute,
   } as any)
 
