@@ -36,6 +36,7 @@ export const customizableMenuSettingsRelations: Record<
   ],
     accountManagement: [
       'accountStats',
+      'publicProfile',
       'vbucksInformation',
       'redeemCodes',
       'devicesAuth',

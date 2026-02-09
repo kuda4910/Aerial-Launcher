@@ -20,6 +20,7 @@
     "title": "Zarządzanie kontem",
     "options": {
       "stats": "Statystyki",
+      "public-profile": "Public Profile",
       "vbucks-information": "Informacje o V-Dolcach",
       "redeem-codes": "Zrealizuj kody",
       "devices-auth": "Urządzenia autoryzowane",

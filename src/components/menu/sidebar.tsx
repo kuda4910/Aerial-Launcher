@@ -268,6 +268,21 @@ export function SidebarMenu({
                       </Link>
                     </li>
                   )}
+                  {getMenuOptionVisibility('publicProfile') && (
+                    <li className="item">
+                      <Link
+                        to="/account-management/public-profile"
+                        className={currentClassNameHover}
+                        activeProps={{
+                          className: cn(activeClassName),
+                        }}
+                        onClick={goToPage}
+                        onAuxClick={whatIsThis()}
+                      >
+                        {t('account-management.options.public-profile')}
+                      </Link>
+                    </li>
+                  )}
                   {getMenuOptionVisibility('vbucksInformation') && (
                     <li className="item">
                       <Link

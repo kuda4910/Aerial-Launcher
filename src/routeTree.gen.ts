@@ -31,6 +31,7 @@ import { Route as AccountManagementRedeemCodesRouteImport } from './routes/accou
 import { Route as AccountManagementEulaRouteImport } from './routes/account-management/eula/route'
 import { Route as AccountManagementEpicGamesSettingsRouteImport } from './routes/account-management/epic-games-settings/route'
 import { Route as AccountManagementDevicesAuthRouteImport } from './routes/account-management/devices-auth/route'
+import { Route as AccountManagementPublicProfileRouteImport } from './routes/account-management/public-profile/route'
 import { Route as AccountsAddTypeImport } from './routes/accounts/add/$type'
 
 // Create/Update Routes
@@ -151,6 +152,12 @@ const AccountManagementDevicesAuthRouteRoute =
     getParentRoute: () => rootRoute,
   } as any)
 
+const AccountManagementPublicProfileRouteRoute =
+  AccountManagementPublicProfileRouteImport.update({
+    path: '/account-management/public-profile',
+    getParentRoute: () => rootRoute,
+  } as any)
+
 const AccountsAddTypeRoute = AccountsAddTypeImport.update({
   path: '/accounts/add/$type',
   getParentRoute: () => rootRoute,
@@ -182,6 +189,10 @@ declare module '@tanstack/react-router' {
     }
     '/account-management/redeem-codes': {
       preLoaderRoute: typeof AccountManagementRedeemCodesRouteImport
+      parentRoute: typeof rootRoute
+    }
+    '/account-management/public-profile': {
+      preLoaderRoute: typeof AccountManagementPublicProfileRouteImport
       parentRoute: typeof rootRoute
     }
     '/account-management/stats': {
@@ -256,6 +267,7 @@ export const routeTree = rootRoute.addChildren([
   AccountManagementEpicGamesSettingsRouteRoute,
   AccountManagementEulaRouteRoute,
   AccountManagementRedeemCodesRouteRoute,
+  AccountManagementPublicProfileRouteRoute,
   AccountManagementStatsRouteRoute,
   AccountManagementVbucksInformationRouteRoute,
   AccountsRemoveRouteRoute,

@@ -1,0 +1,21 @@
+{
+  "description": "Search a Fortnite player and fetch their public STW profile.",
+  "account": "Account selected: {{name}}",
+  "form": {
+    "label": "Player display name",
+    "placeholder": "Example: Ninja",
+    "submit-button": "Query Public Profile"
+  },
+  "results": {
+    "title": "Filtered public profile data",
+    "display-name": "Display Name",
+    "account-id": "Account ID",
+    "homebase-name": "Homebase Name",
+    "commander-level": "Commander Level",
+    "collection-book-level": "Collection Book Level",
+    "zones-completed": "Zones Completed",
+    "total-items": "Total Items",
+    "last-updated": "Last Updated"
+  },
+  "error": "Failed to retrieve public profile"
+}

@@ -213,6 +213,19 @@ function AccountManagementSection() {
           <div className="item">
             <Label
               className="title"
+              htmlFor="public-profile"
+            >
+              {t('account-management.options.public-profile')}
+            </Label>
+            <Switch
+              id="public-profile"
+              checked={getMenuOptionVisibility('publicProfile')}
+              onCheckedChange={updateMenuOption('publicProfile')}
+            />
+          </div>
+          <div className="item">
+            <Label
+              className="title"
               htmlFor="vbucks-information"
             >
             {t('account-management.options.vbucks-information')}

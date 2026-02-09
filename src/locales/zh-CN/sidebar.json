@@ -20,6 +20,7 @@
     "title": "账户管理",
     "options": {
       "stats": "统计",
+      "public-profile": "Public Profile",
       "vbucks-information": "V币信息",
       "redeem-codes": "兑换码",
       "devices-auth": "设备授权",

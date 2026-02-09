@@ -20,6 +20,7 @@
     "title": "Administrar Cuenta",
     "options": {
       "stats": "Estadísticas",
+      "public-profile": "Public Profile",
       "vbucks-information": "Información de V-Bucks",
       "redeem-codes": "Reclamar Códigos",
       "devices-auth": "Autenticación de Dispositivos",

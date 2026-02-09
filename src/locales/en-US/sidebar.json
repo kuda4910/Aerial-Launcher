@@ -20,6 +20,7 @@
     "title": "Account Management",
     "options": {
       "stats": "Stats",
+      "public-profile": "Public Profile",
       "vbucks-information": "V-Bucks Information",
       "redeem-codes": "Redeem Codes",
       "devices-auth": "Devices Auth",

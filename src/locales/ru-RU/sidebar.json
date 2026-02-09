@@ -20,6 +20,7 @@
     "title": "Управление Аккаунтом",
     "options": {
       "stats": "Статистика",
+      "public-profile": "Public Profile",
       "vbucks-information": "Информацию о В-баксах",
       "redeem-codes": "Активация Кодов",
       "devices-auth": "Аутентификация Устройств",
